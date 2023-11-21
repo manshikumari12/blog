@@ -19,7 +19,7 @@ app.use("/blog", blogrouter);
 
 
 
-app.listen(process.env.port,async ()=>{
+app.listen("1110",async ()=>{
     try {
         await connection
         console.log("connected to data-base")
