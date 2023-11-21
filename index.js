@@ -1,7 +1,7 @@
 const express =require("express")
 require("dotenv").config();
 const {userroute}=require("./route/user.route")
-const {blogrouter}=require("./route/blog.route")
+
 const {connection} =require("./db")
 const app=express()
 const cors = require("cors")
@@ -13,7 +13,7 @@ app.get("/", (req,res) => {
   });
 
   app.use("/user", userroute);
-app.use("/blog", blogrouter);
+
 
 
 
